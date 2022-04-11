@@ -23,16 +23,23 @@ a:active  {color: #000000; text-decoration: line-through;} /* 클릭했을때 �
 }
 #wrap > #header {border-bottom: 1px solid #bfbfbf;}
 #wrap > #nav {
-	border-bottom: 1px solid #bfbfbf;
-	}
-#wrap > #contents {margin: 50px 0px 50px 20px;}
+	padding: 0px 0px 15px 0px;
+	border-bottom: 1px solid #bfbfbf;}
+#wrap > #contents {
+	padding: 50px 0px 25px 20px;
+	/* margin: 50px 0px 50px 20px; */}
 #wrap > #footer {
 	padding: 25px;
 	margin: 125px 0px 0px 0px;
 	background-color: #e9e9e9;
 	text-align: center;
-
+	/* background-color: #e9e9e9;
+	margin: 125px 0px 0px 0px;
+	font-size:12px;
+	text-align: center;
+	line-height: 50px;  */
 }
+
 /* *******************mainpage******************* */
 h1 {
 	color: #79b30b; 
@@ -40,31 +47,35 @@ h1 {
 	float: left;
 	font-weight: bold;
 }
-.first-wrap {
+ul {
+	margin: 15px 0px 0px 0px;
 	float: right;
-	margin: 15px 0px 5px 0px;
 }
-ul>li {
-	float: left;
-	padding: 0px 0px 15px 20px;
+.join-new {
+	font-size: 15px;
+	
 }
-.board-list {
+#header ul>li {
+	margin: 0px 0px 0px 20px;
 	float: left;
-	margin: 15px 80px 15px 80px;
-	font-size: 25px;
+	
+}
+#nav ul>li {
+	float: left;
+	width:250px;
+	text-align: center;
+	font-size: 20px;
 	font-weight: bold ;	
+}
+.title {
+	font-weight: bold;
+	font-size: 20px;
 }
 div>img {float: left;}
 div>p {font-size: 15px;}
 /* *******************subpage******************* */
-.title {
-	font-weight: bold;
-	font-size: 25px;
-}
+
 .pic {margin: 0px 50px 0px 0px;}
-.board-whole {
-	float: left;
-}
 .board-title {
 	float: left;
 	background-color: #bfbfbf;
@@ -80,11 +91,9 @@ div>p {font-size: 15px;}
 	width: 180px;
 	}
 .board-main {
-	margin: 40px 0px 0px 20px;
-	border-bottom: 1px solid #bfbfbf;
+	margin: 0px 0px 0px 20px;
 	float: left;
 	font-weight: bold;
 	font-size: 20px;
-	width: 800px;
 	
 }
