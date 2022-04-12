@@ -16,16 +16,23 @@ a:active  {color: #000000; text-decoration: line-through;} /* 클릭했을때 �
 .clearfix{*zoom:1;}
 .clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
 .clearfix:after {clear: both;}
+ 
+
 /* *******************레이아웃******************* */
 #wrap {
 	width: 1000px;
 	margin: 0px auto;
 }
+
 #wrap > #header {border-bottom: 1px solid #bfbfbf;}
+
 #wrap > #nav {
 	border-bottom: 1px solid #bfbfbf;
 	}
-#wrap > #contents {margin: 50px 0px 50px 20px;}
+#wrap > #contents {
+	margin: 50px 0px 50px 20px;
+}
+
 #wrap > #footer {
 	padding: 25px;
 	margin: 125px 0px 0px 0px;
@@ -33,58 +40,38 @@ a:active  {color: #000000; text-decoration: line-through;} /* 클릭했을때 �
 	text-align: center;
 
 }
-/* *******************mainpage******************* */
+/* *******************헤더(로고 로그인, 회원가입)******************* */
 h1 {
 	color: #79b30b; 
 	font-size: 35px;
 	float: left;
 	font-weight: bold;
 }
-.first-wrap {
+ul {
 	float: right;
 	margin: 15px 0px 5px 0px;
 }
 ul>li {
-	float: left;
+	float:left;
 	padding: 0px 0px 15px 20px;
 }
-.board-list {
+ol>li {
 	float: left;
 	margin: 15px 80px 15px 80px;
 	font-size: 25px;
 	font-weight: bold ;	
 }
-div>img {float: left;}
-div>p {font-size: 15px;}
-/* *******************subpage******************* */
+div>img {
+	float: left;
+}
 .title {
 	font-weight: bold;
 	font-size: 25px;
 }
-.pic {margin: 0px 50px 0px 0px;}
-.board-whole {
-	float: left;
+.pic {
+	margin: 0px 50px 0px 0px;
 }
-.board-title {
-	float: left;
-	background-color: #bfbfbf;
-	margin: 20px 0px 0px 0px;
-	padding: 25px 0px 25px 68px;
-	width: 180px;
-	font-weight: bold;
-	}
-.board {
-	float: left;
-	border: 1px solid #bfbfbf;
-	margin: 5px 0px 0px 0px;
-	width: 180px;
-	}
-.board-main {
-	margin: 40px 0px 0px 20px;
-	border-bottom: 1px solid #bfbfbf;
-	float: left;
-	font-weight: bold;
-	font-size: 20px;
-	width: 800px;
+div>p {
+	font-size: 15px;
+}
 	
-}

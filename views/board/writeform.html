@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>writeform</title>
+<link rel="stylesheet" href="../../assets/css/index.css">
+<link rel="stylesheet" href="../../assets/css/board.css">
+</head>
+<body>
+<div id="wrap">
+		<div id="header" class="clearfix">
+		<h1>MySite</h1>
+		<ul>
+			<li class="join-new"><a href="">로그인</a></li>
+			<li class="join-new"><a href="">회원가입</a></li>
+		</ul>
+	</div>
+	<!-- header -->
+	<div id="nav" class="clearfix">
+		<ul>
+			<li class="board-list"><a href="">입사지원서</a></li>
+			<li class="board-list"><a href="">게시판</a></li>
+			<li class="board-list"><a href="">갤러리</a></li>
+			<li class="last-margin board-list"><a href="">방명록</a></li>
+		</ul>
+	</div>
+	<!-- NAV -->
+	<div id="contents" class="clearfix">
+		<div id="aside">
+			<h2><a href="">게시판</a></h2>
+			<ul>
+				<li><a href="">일반 게시판</a></li>
+				<li><a href="">댓글 게시판</a></li>
+				<li><a href="">첨부 게시판</a></li>
+			</ul>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<ul class="list2">
+				<li><a href="">회원 정보</a></li>
+				<li><a href="">회원 가입</a></li>
+				<li><a href="">ID/PW찾기</a></li>
+			</ul>
+		</div>
+		<!-- aside -->
+		<div id="contents-main">
+			<div id="contents-header">
+				<h3><a href="">일반 게시판</a></h3>
+				<ol class="board-dir">
+					<li class="dir"><a href="">홈</a></li>
+					<li class="dir"><a href="">게시판</a></li> 
+					<li class="dir last-dir"><a href="">일반 게시판</a></li>
+				</ol>
+			</div>
+		<!-- header -->	
+			<div id="contents-body">
+		<!-- 게시판 선택 -->
+				<div class="form-group">
+					<label class="name-group" for="sel-board">게시판 선택</label>
+					<select id="sel-board">
+						<option>선택 해 주세요</option>
+						<option>공지사항</option>
+						<option>일반 게시판</option>
+						<option>익명 게시판</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label class="name-group" for="txt-title">제목</label>
+					<input id="txt-title" type="text">
+				</div>
+				<div class="form-group">
+					<label class="name-group" for="txt-pw">비밀번호</label>
+					<input id="txt-pw" type="password">
+				</div>
+				<div class="form-group">
+					<span class="name-group">공개 범위</span>
+					<label for="p01">본인</label><input id="p01" type="radio" name="permit">
+					<label for="p02">로그인 회원</label><input id="p02" type="radio" name="permit">
+					<label for="p03">친구</label><input id="p03" type="radio" name="permit">
+					<label for="p04">전체</label><input id="p04" type="radio" name="permit">
+				</div>
+				<div class="form-group">
+					<span class="name-group">허용 범위</span>
+					<label for="r01">댓글 허용</label><input id="r01" type="checkbox" name="range">
+					<label for="r02">답글 허용</label><input id="r02" type="checkbox" name="range">
+					<label for="r03">좋아요 허용</label><input id="r03" type="checkbox" name="range">
+				</div>
+				<!-- 글 내용 -->
+				<div class="form-group">
+					<textarea id="txt-contents"></textarea>
+				</div>
+				<div class="form-group">
+					<label class="name-group" for="files">첨부파일</label>
+					<input id="files" type="file">
+				</div>
+			</div>
+				<!-- contents body -->
+				<div id="contents-footer">
+					<button class="btn" type="submit">등록</button>
+					<button class="btn" type="submit">초기화</button>
+				</div>
+		</div>
+		<!-- main -->
+	</div>
+	<div id="footer">
+		Copyright © 2020 황일영. All right reserved
+	</div>
+	<!-- footer -->
+</div>
+
+</body>
+</html>
